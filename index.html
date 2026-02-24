@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Construction Services Ltd | Professional Infrastructure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* BRAND COLORS FROM LOGO */
+        :root {
+            --navy: #002B5B;
+            --yellow: #F2B705;
+        }
+        .text-navy { color: var(--navy); }
+        .bg-navy { background-color: var(--navy); }
+        .text-yellow { color: var(--yellow); }
+        .bg-yellow { background-color: var(--yellow); }
+        .border-navy { border-color: var(--navy); }
+
+        /* HERO VIDEO STYLING */
+        .hero-container {
+            position: relative;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #f0f2f5;
+        }
+        #bg-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            object-fit: cover;
+            opacity: 0.25; /* Keeps video visible but text readable */
+        }
+        .hero-content { position: relative; z-index: 10; text-align: center; }
+
+        /* SMOOTH SCROLLING */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+<nav class="flex justify-between items-center px-6 md:px-12 py-5 bg-white shadow-lg sticky top-0 z-50">
+    <div class="font-black text-2xl uppercase">
+        <span class="text-navy">Super</span> <span class="text-yellow">Construction</span>
+    </div>
+    <div class="hidden md:flex space-x-8 font-bold text-navy items-center">
+        <a href="#home" class="hover:text-yellow transition">Home</a>
+        <a href="#services" class="hover:text-yellow transition">Services</a>
+        <a href="#projects" class="hover:text-yellow transition">Projects</a>
+        <a href="#contact" class="bg-navy text-white px-6 py-2 rounded shadow-md hover:bg-yellow hover:text-navy transition">Get a Quote</a>
+    </div>
+</nav>
+
+<section id="home" class="hero-container">
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-crane-at-a-construction-site-4848-large.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content px-4">
+        <h1 class="text-navy text-5xl md:text-8xl font-black mb-4 leading-tight">
+            BUILDING THE <br> FUTURE OF <span class="text-yellow">PNG</span>
+        </h1>
+        <p class="text-navy font-bold text-lg md:text-2xl max-w-2xl mx-auto mb-10 opacity-90">
+            Leading-edge engineering and construction services delivered with integrity and local expertise.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="#projects" class="bg-yellow text-white font-black py-4 px-10 rounded shadow-xl hover:scale-105 transition transform">OUR WORK</a>
+            <a href="#services" class="border-4 border-navy text-navy font-black py-4 px-10 rounded hover:bg-navy hover:text-white transition">OUR SERVICES</a>
+        </div>
+    </div>
+</section>
+
+<section class="bg-navy py-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div><h3 class="text-4xl font-black text-yellow">15+</h3><p class="text-white text-xs font-bold uppercase tracking-widest">Years Experience</p></div>
+        <div><h3 class="text-4xl font-black text-yellow">200+</h3><p class="text-white text-xs font-bold uppercase tracking-widest">Completed Projects</p></div>
+        <div><h3 class="text-4xl font-black text-yellow">50+</h3><p class="text-white text-xs font-bold uppercase tracking-widest">Heavy Machines</p></div>
+        <div><h3 class="text-4xl font-black text-yellow">100%</h3><p class="text-white text-xs font-bold uppercase tracking-widest">Safety Record</p></div>
+    </div>
+</section>
+
+<section id="services" class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+        <h2 class="text-navy text-4xl md:text-5xl font-black uppercase">Our Core Expertise</h2>
+        <div class="w-24 h-2 bg-yellow mx-auto mt-4"></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white p-10 rounded-xl shadow-md border-t-8 border-navy hover:shadow-2xl transition">
+            <div class="text-yellow text-4xl mb-6"><i class="fas fa-road"></i></div>
+            <h4 class="text-navy text-2xl font-black mb-4">Civil Engineering</h4>
+            <p class="text-gray-600 font-medium">Specialized in road construction, drainage systems, and bridge maintenance across PNG's toughest terrains.</p>
+        </div>
+        <div class="bg-white p-10 rounded-xl shadow-md border-t-8 border-yellow hover:shadow-2xl transition">
+            <div class="text-navy text-4xl mb-6"><i class="fas fa-building"></i></div>
+            <h4 class="text-navy text-2xl font-black mb-4">Commercial Building</h4>
+            <p class="text-gray-600 font-medium">Design and construction of industrial warehouses, office complexes, and retail centers with modern standards.</p>
+        </div>
+        <div class="bg-white p-10 rounded-xl shadow-md border-t-8 border-navy hover:shadow-2xl transition">
+            <div class="text-yellow text-4xl mb-6"><i class="fas fa-truck-monster"></i></div>
+            <h4 class="text-navy text-2xl font-black mb-4">Equipment Hire</h4>
+            <p class="text-gray-600 font-medium">A diverse fleet of excavators, graders, and dump trucks available for short-term and long-term project hire.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="py-24 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+            <div>
+                <h2 class="text-navy text-4xl md:text-5xl font-black uppercase">Recent Projects</h2>
+                <p class="text-gray-500 font-bold mt-2">Delivering excellence on every site.</p>
+            </div>
+            <a href="#" class="text-navy font-black border-b-4 border-yellow mt-4 md:mt-0">VIEW ALL PROJECTS</a>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="relative group overflow-hidden rounded-lg h-64 bg-navy">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&w=500" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition">
+                <div class="absolute inset-0 p-6 flex flex-col justify-end text-white">
+                    <h5 class="font-black text-xl uppercase">Port Moresby Roadway</h5>
+                    <p class="text-yellow font-bold text-sm">Civil Works / Completed</p>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-lg h-64 bg-navy">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=500" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition">
+                <div class="absolute inset-0 p-6 flex flex-col justify-end text-white">
+                    <h5 class="font-black text-xl uppercase">Highlands Highway Link</h5>
+                    <p class="text-yellow font-bold text-sm">Infrastructure / Ongoing</p>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-lg h-64 bg-navy">
+                <img src="https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?auto=format&fit=crop&w=500" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition">
+                <div class="absolute inset-0 p-6 flex flex-col justify-end text-white">
+                    <h5 class="font-black text-xl uppercase">Industrial Park A1</h5>
+                    <p class="text-yellow font-bold text-sm">Commercial / Completed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contact" class="bg-navy text-white pt-20 pb-10 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16 mb-16">
+        <div>
+            <h4 class="text-2xl font-black mb-6 uppercase"><span class="text-yellow">Super</span> Construction</h4>
+            <p class="text-gray-300 font-medium leading-relaxed">Super Construction Services Limited is a premier PNG-owned company dedicated to nation-building through superior engineering.</p>
+        </div>
+        <div>
+            <h4 class="text-xl font-bold mb-6 text-yellow">Quick Links</h4>
+            <ul class="space-y-4 font-bold text-gray-300">
+                <li><a href="#home" class="hover:text-white">Home</a></li>
+                <li><a href="#services" class="hover:text-white">Our Services</a></li>
+                <li><a href="#projects" class="hover:text-white">Recent Projects</a></li>
+                <li><a href="#" class="hover:text-white">Safety Policy</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="text-xl font-bold mb-6 text-yellow">Contact Us</h4>
+            <p class="mb-4 font-bold"><i class="fas fa-map-marker-alt mr-3"></i> Section 45, Port Moresby, PNG</p>
+            <p class="mb-4 font-bold"><i class="fas fa-phone mr-3"></i> +675 123 4567</p>
+            <p class="font-bold"><i class="fas fa-envelope mr-3"></i> info@superconstruction.com.pg</p>
+        </div>
+    </div>
+    <div class="text-center border-t border-gray-700 pt-10 text-gray-400 font-bold text-sm">
+        &copy; 2026 Super Construction Services Limited. All Rights Reserved.
+    </div>
+</footer>
+
+</body>
+</html>
